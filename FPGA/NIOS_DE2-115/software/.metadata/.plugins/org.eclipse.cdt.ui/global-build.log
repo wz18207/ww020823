@@ -1,0 +1,190 @@
+16:11:01 **** Incremental Build of configuration Nios II for project leds_bsp ****
+make all 
+[BSP build complete]
+16:11:04 **** Build of configuration Nios II for project leds ****
+make all 
+Info: Building ../leds_bsp/
+D:/intelFPGA/18.1.0.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_bsp//HAL/inc -I../leds_bsp/ -I../leds_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking leds.elf
+nios2-elf-g++  -T'../leds_bsp//linker.x' -msys-crt0='../leds_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_bsp/   -Wl,-Map=leds.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o leds.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert leds.elf --thread_model hal --cpu_name nios2_gen2 --qsys true --simulation_enabled false --id 34087749 --sidp 0x21068 --timestamp 1553180875 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name NIOS_core --quartus_project_dir "D:/FPGA/NIOS_DE2-115" --jdi ../..//output_files/NIOS_DE2-115.jdi --sopcinfo D:/FPGA/NIOS_DE2-115/software/leds_bsp/../../NIOS_core.sopcinfo
+Info: (leds.elf) 29 KBytes program size (code + initialized data).
+Info:            28 KBytes free for stack + heap.
+Info: Creating leds.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds.elf >leds.objdump
+[leds build complete]
+16:15:20 **** Incremental Build of configuration Nios II for project leds_bsp ****
+make all 
+[BSP build complete]
+16:15:23 **** Incremental Build of configuration Nios II for project leds ****
+make all 
+Info: Building ../leds_bsp/
+D:/intelFPGA/18.1.0.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_bsp/
+[BSP build complete]
+[leds build complete]
+16:25:13 **** Incremental Build of configuration Nios II for project leds_bsp ****
+make all 
+[BSP build complete]
+16:25:15 **** Incremental Build of configuration Nios II for project leds ****
+make all 
+Info: Building ../leds_bsp/
+D:/intelFPGA/18.1.0.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_bsp//HAL/inc -I../leds_bsp/ -I../leds_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:23:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Hello from Nios II!\n");
+   ^
+hello_world.c:23:3: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world.c:23:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c:26:10: error: 'i' undeclared (first use in this function)
+   while (i)
+          ^
+hello_world.c:26:10: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:28:4: error: 'av' undeclared (first use in this function)
+    av = IROD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+    ^
+hello_world.c:28:9: warning: implicit declaration of function 'IROD_ALTERA_AVALON_PIO_DATA' [-Wimplicit-function-declaration]
+    av = IROD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+         ^
+In file included from ../leds_bsp//drivers/inc/altera_avalon_pio_regs.h:34:0,
+                 from hello_world.c:18:
+hello_world.c:29:43: error: 'sw' undeclared (first use in this function)
+    IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, sw);
+                                           ^
+../leds_bsp//HAL/inc/io.h:75:66: note: in definition of macro 'IOWR'
+   __builtin_stwio (__IO_CALC_ADDRESS_NATIVE ((BASE), (REGNUM)), (DATA))
+                                                                  ^
+hello_world.c:29:4: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
+    IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, sw);
+    ^
+hello_world.c:24:7: warning: unused variable 'sv' [-Wunused-variable]
+   int sv = 0;
+       ^
+make: *** [obj/default/hello_world.o] Error 1
+16:26:19 **** Incremental Build of configuration Nios II for project leds_bsp ****
+make all 
+[BSP build complete]
+16:26:21 **** Incremental Build of configuration Nios II for project leds ****
+make all 
+Info: Building ../leds_bsp/
+D:/intelFPGA/18.1.0.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_bsp//HAL/inc -I../leds_bsp/ -I../leds_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:23:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Hello from Nios II!\n");
+   ^
+hello_world.c:23:3: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world.c:23:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c:28:4: error: 'av' undeclared (first use in this function)
+    av = IROD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+    ^
+hello_world.c:28:4: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:28:9: warning: implicit declaration of function 'IROD_ALTERA_AVALON_PIO_DATA' [-Wimplicit-function-declaration]
+    av = IROD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+         ^
+In file included from ../leds_bsp//drivers/inc/altera_avalon_pio_regs.h:34:0,
+                 from hello_world.c:18:
+hello_world.c:29:43: error: 'sw' undeclared (first use in this function)
+    IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, sw);
+                                           ^
+../leds_bsp//HAL/inc/io.h:75:66: note: in definition of macro 'IOWR'
+   __builtin_stwio (__IO_CALC_ADDRESS_NATIVE ((BASE), (REGNUM)), (DATA))
+                                                                  ^
+hello_world.c:29:4: note: in expansion of macro 'IOWR_ALTERA_AVALON_PIO_DATA'
+    IOWR_ALTERA_AVALON_PIO_DATA(LEDR_BASE, sw);
+    ^
+hello_world.c:24:7: warning: unused variable 'sv' [-Wunused-variable]
+   int sv = 0;
+       ^
+make: *** [obj/default/hello_world.o] Error 1
+16:26:40 **** Incremental Build of configuration Nios II for project leds_bsp ****
+make all 
+[BSP build complete]
+16:26:42 **** Incremental Build of configuration Nios II for project leds ****
+make all 
+Info: Building ../leds_bsp/
+D:/intelFPGA/18.1.0.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_bsp//HAL/inc -I../leds_bsp/ -I../leds_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:23:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Hello from Nios II!\n");
+   ^
+hello_world.c:23:3: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world.c:23:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c:28:4: error: 'sw' undeclared (first use in this function)
+    sw = IROD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+    ^
+hello_world.c:28:4: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:28:9: warning: implicit declaration of function 'IROD_ALTERA_AVALON_PIO_DATA' [-Wimplicit-function-declaration]
+    sw = IROD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+         ^
+hello_world.c:24:7: warning: unused variable 'sv' [-Wunused-variable]
+   int sv = 0;
+       ^
+make: *** [obj/default/hello_world.o] Error 1
+16:27:35 **** Incremental Build of configuration Nios II for project leds_bsp ****
+make all 
+[BSP build complete]
+16:27:37 **** Incremental Build of configuration Nios II for project leds ****
+make all 
+Info: Building ../leds_bsp/
+D:/intelFPGA/18.1.0.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_bsp//HAL/inc -I../leds_bsp/ -I../leds_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:23:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Hello from Nios II!\n");
+   ^
+hello_world.c:23:3: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world.c:23:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+hello_world.c:28:4: error: 'sw' undeclared (first use in this function)
+    sw = IORD_ALTERA_AVALON_PIO_DATA(SW_BASE);
+    ^
+hello_world.c:28:4: note: each undeclared identifier is reported only once for each function it appears in
+hello_world.c:24:7: warning: unused variable 'sv' [-Wunused-variable]
+   int sv = 0;
+       ^
+make: *** [obj/default/hello_world.o] Error 1
+16:28:14 **** Incremental Build of configuration Nios II for project leds_bsp ****
+make all 
+[BSP build complete]
+16:28:16 **** Incremental Build of configuration Nios II for project leds ****
+make all 
+Info: Building ../leds_bsp/
+D:/intelFPGA/18.1.0.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../leds_bsp//HAL/inc -I../leds_bsp/ -I../leds_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'main':
+hello_world.c:23:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("Hello from Nios II!\n");
+   ^
+hello_world.c:23:3: warning: incompatible implicit declaration of built-in function 'printf'
+hello_world.c:23:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+Info: Linking leds.elf
+nios2-elf-g++  -T'../leds_bsp//linker.x' -msys-crt0='../leds_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../leds_bsp/   -Wl,-Map=leds.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o leds.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert leds.elf --thread_model hal --cpu_name nios2_gen2 --qsys true --simulation_enabled false --id 34087749 --sidp 0x21068 --timestamp 1553180875 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name NIOS_core --quartus_project_dir "D:/FPGA/NIOS_DE2-115" --jdi ../..//output_files/NIOS_DE2-115.jdi --sopcinfo D:/FPGA/NIOS_DE2-115/software/leds_bsp/../../NIOS_core.sopcinfo
+Info: (leds.elf) 29 KBytes program size (code + initialized data).
+Info:            27 KBytes free for stack + heap.
+Info: Creating leds.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source leds.elf >leds.objdump
+[leds build complete]
+16:28:47 **** Incremental Build of configuration Nios II for project leds_bsp ****
+make all 
+[BSP build complete]
+16:28:49 **** Incremental Build of configuration Nios II for project leds ****
+make all 
+Info: Building ../leds_bsp/
+D:/intelFPGA/18.1.0.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../leds_bsp/
+[BSP build complete]
+[leds build complete]

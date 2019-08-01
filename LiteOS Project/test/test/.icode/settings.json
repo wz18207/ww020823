@@ -1,0 +1,78 @@
+{
+    "compiler": {
+        "make": {
+            "path": "D:\\Program Files (x86)\\LiteOS Studio\\resources\\msys\\1.0\\bin\\make.exe",
+            "script": null,
+            "args": null
+        },
+        "path": "D:\\Program Files (x86)\\LiteOS Studio\\resources\\arm-none-eabi\\bin",
+        "type": "GCC",
+        "gcc": {
+            "path": null,
+            "optimze": "O2",
+            "cfiles": null,
+            "define": null,
+            "include": null,
+            "strictC": false,
+            "timeOptimize": false,
+            "C99Mode": true,
+            "ElfPerFunc": false,
+            "args": null
+        },
+        "asm": {
+            "path": null,
+            "asmfiles": null,
+            "define": null,
+            "include": null,
+            "args": null,
+            "readOnly": false,
+            "readWrite": false,
+            "thumbMode": false
+        },
+        "linker": {
+            "path": null,
+            "robase": null,
+            "rwbase": null,
+            "script": null,
+            "args": null
+        },
+        "gdbPath": "D:\\Program Files (x86)\\LiteOS Studio\\resources\\arm-none-eabi\\bin"
+    },
+    "burner": {
+        "path": "D:\\Program Files (x86)\\SEGGER\\JLink_V644g",
+        "type": "JLink",
+        "interface": "SWD",
+        "speed": null,
+        "erase": true,
+        "check": true,
+        "flashAddress": null,
+        "loadAddress": "0x08000000"
+    },
+    "debugger": {
+        "jlink": {
+            "path": "D:\\Program Files (x86)\\SEGGER\\JLink_V644g",
+            "port": "USB",
+            "interface": "SWD",
+            "speed": "4000"
+        },
+        "type": "JLink",
+        "initType": "reset",
+        "initFile": ".icode\\default.gdbinit",
+        "compileOS": "Windows",
+        "compilePath": null,
+        "gdbPath": "D:\\Program Files (x86)\\LiteOS Studio\\resources\\arm-none-eabi\\bin"
+    },
+    "general": {
+        "projectName": "test",
+        "sdkVersion": "LiteOS-tag_LiteOS_IDE_20180905",
+        "mcuType": "ARM Cortex-M4"
+    },
+    "output": {
+        "name": "Huawei_LiteOS",
+        "path": ".\\build"
+    },
+    "version": "0.3.0",
+    "target": {
+        "productNumber": "STM32F429IG"
+    }
+}

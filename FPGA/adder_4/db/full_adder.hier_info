@@ -1,0 +1,26 @@
+|adder
+cont <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+ain => full_adder:inst.a
+bin => full_adder:inst.b
+cin => full_adder:inst1.b
+sum <= full_adder:inst1.s
+
+
+|adder|full_adder:inst1
+co <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst2.IN1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|full_adder:inst
+co <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst2.IN0
+b => inst.IN1
+b => inst2.IN1
+s <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

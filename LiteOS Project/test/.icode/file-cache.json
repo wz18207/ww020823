@@ -1,0 +1,51 @@
+{
+    "openFiles": [
+        {
+            "file": {
+                "name": "los_api_interrupt.c",
+                "size": 3150,
+                "path": "test\\examples\\api\\los_api_interrupt.c",
+                "fileExtension": ".c",
+                "isFolder": false,
+                "isOpen": false,
+                "level": 5,
+                "parentPath": "D:\\Program Files (x86)\\LiteOS Studio\\test\\test\\examples\\api"
+            },
+            "currentShow": false,
+            "isPreview": false,
+            "isChange": false
+        },
+        {
+            "file": {
+                "name": "los_init.c",
+                "size": 7025,
+                "path": "test\\kernel\\los_init.c",
+                "fileExtension": ".c",
+                "isFolder": false,
+                "isOpen": false,
+                "level": 4,
+                "parentPath": "D:\\Program Files (x86)\\LiteOS Studio\\test\\test\\kernel"
+            },
+            "currentShow": false,
+            "isPreview": false,
+            "isChange": false
+        },
+        {
+            "file": {
+                "name": "STM32F429IGTx_LiteOS_Bootloader.ld",
+                "size": 5427,
+                "path": "test\\STM32F429IGTx_LiteOS_Bootloader.ld",
+                "fileExtension": ".ld",
+                "isFolder": false,
+                "isOpen": false,
+                "level": 3,
+                "parentPath": "E:\\LiteOS Project\\test\\test"
+            },
+            "currentShow": false,
+            "isPreview": false,
+            "isChange": false
+        }
+    ],
+    "previewName": "test\\STM32F429IGTx_LiteOS_Bootloader.ld",
+    "currentShowName": "test\\STM32F429IGTx_LiteOS_Bootloader.ld"
+}

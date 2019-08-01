@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA/adder_4/simulation/qsim
+vadder
+Z1 !s110 1563358686
+!i10b 1
+!s100 R[UPj0mB_270ZfGbIPZUz0
+IZooXC[z8`EhIPcLUioN183
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1563358684
+Z4 8full_adder.vo
+Z5 Ffull_adder.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1563358686.000000
+Z9 !s107 full_adder.vo|
+Z10 !s90 -work|work|full_adder.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vadder_vlg_vec_tst
+R1
+!i10b 1
+!s100 GSYh@Hz]9MN89H@9BiKfB2
+I?F9X7Fm4k_FQdS<D5POIA2
+R2
+R0
+w1563358683
+8full_adder.vwf.vt
+Ffull_adder.vwf.vt
+Z13 L0 29
+R7
+r1
+!s85 0
+31
+R8
+!s107 full_adder.vwf.vt|
+!s90 -work|work|full_adder.vwf.vt|
+!i113 1
+R11
+R12
+vfull_adder
+Z14 !s110 1563357759
+!i10b 1
+!s100 gS9l<^j9]Q?ecW[H=gTVm2
+IeQLQK8]a<N<O3F;kO2?>N2
+R2
+R0
+w1563357758
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z15 !s108 1563357759.000000
+R9
+R10
+!i113 1
+R11
+R12
+vfull_adder_vlg_vec_tst
+R14
+!i10b 1
+!s100 N^Po5R]T9MN?Tge0FfN352
+I:^V_BVT`XLWJWoFnVS?Pa1
+R2
+R0
+w1563357757
+8half_adder.vwf.vt
+Fhalf_adder.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R15
+!s107 half_adder.vwf.vt|
+!s90 -work|work|half_adder.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+R1
+!i10b 1
+!s100 WhXL`_[F1V8mkd5@G_?Fh1
+ILfMEBRGH2N<6mVWgcTY0i0
+R2
+R0
+R3
+R4
+R5
+L0 172
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

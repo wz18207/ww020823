@@ -1,0 +1,91 @@
+{
+    "output": {
+        "name": "Huawei_LiteOS",
+        "path": ".\\build"
+    },
+    "target": {
+        "UUID": "96e9b366-8a40-47ee-94fe-9bdd7784ce90",
+        "flag": "0",
+        "factory": "ST",
+        "boardName": "STM32F429IG",
+        "productNumber": "STM32F429IG",
+        "core": "Cortex-M4",
+        "numberCores": 1,
+        "flashSize": "1024KB",
+        "romAddress": "0x8000000",
+        "ramSize": "256KB",
+        "ramAddress": "0x20000000",
+        "restartAddress": "null",
+        "featuresAddress": "https://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32-high-performance-mcus/stm32f4-series/stm32f429-439/stm32f429ag.html#samplebuy-scroll",
+        "dataSheetAddress": "https://www.st.com/resource/en/datasheet/stm32f429ag.pdf",
+        "_highlight": true
+    },
+    "debugger": {
+        "type": "JLink",
+        "jlink": {
+            "interface": "SWD",
+            "speed": "8000",
+            "path": "D:\\Program Files (x86)\\SEGGER\\JLink_V644g",
+            "port": "USB"
+        },
+        "initType": "reset",
+        "initFile": ".icode\\default.gdbinit",
+        "compileOS": "Windows",
+        "compilePath": null,
+        "gdbPath": "D:\\Program Files (x86)\\LiteOS Studio\\resources\\arm-none-eabi\\bin"
+    },
+    "burner": {
+        "type": "JLink",
+        "speed": "8000",
+        "interface": "SWD",
+        "loadAddress": "0x08000000",
+        "path": "D:\\Program Files (x86)\\SEGGER\\JLink_V644g",
+        "erase": true,
+        "check": true,
+        "flashAddress": null
+    },
+    "compiler": {
+        "make": {
+            "path": "D:\\Program Files (x86)\\LiteOS Studio\\resources\\msys\\1.0\\bin\\make.exe",
+            "script": "test\\Makefile",
+            "args": null
+        },
+        "path": "D:\\Program Files (x86)\\LiteOS Studio\\resources\\arm-none-eabi\\bin",
+        "type": "GCC",
+        "gcc": {
+            "path": null,
+            "optimze": "O2",
+            "cfiles": null,
+            "define": null,
+            "include": null,
+            "strictC": false,
+            "timeOptimize": false,
+            "C99Mode": true,
+            "ElfPerFunc": false,
+            "args": null
+        },
+        "asm": {
+            "path": null,
+            "asmfiles": null,
+            "define": null,
+            "include": null,
+            "args": null,
+            "readOnly": false,
+            "readWrite": false,
+            "thumbMode": false
+        },
+        "linker": {
+            "path": null,
+            "robase": null,
+            "rwbase": null,
+            "script": null,
+            "args": null
+        },
+        "prefix": "arm-none-eabi",
+        "gdbPath": "D:\\Program Files (x86)\\LiteOS Studio\\resources\\arm-none-eabi\\bin"
+    },
+    "general": {
+        "projectName": "test"
+    },
+    "version": "0.3.0"
+}

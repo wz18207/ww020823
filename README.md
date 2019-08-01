@@ -1,2 +1,2 @@
 # ww020823
-Putting program of software, graphic(CUDA), hardware(FPGA+STM32)and more in this repository.
+本人很懒，所以只建立一个Repository供大家参考使用。所有代码都拥有独立的分类。

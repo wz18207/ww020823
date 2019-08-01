@@ -1,0 +1,7 @@
+print(4 + 5 - 3)
+print(3 + 4 + 5)
+print(3 * 4 * 5)
+print(3 * 4 + 5)
+print(3 * (4 + 5))
+print(3 * 4 + 5)
+print((3 + 4) * 5)

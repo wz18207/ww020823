@@ -1,0 +1,5 @@
+print(5 - 3)
+print(3.5 + 4)
+print(3.5 + 4.5)
+print(3 * 4)
+print(3.5 * 4)

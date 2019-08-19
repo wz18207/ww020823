@@ -1,0 +1,366 @@
+程序1：
+Question1.m
+%*****************************************
+%问题1：求两个组各个样酒的总分及平均标准差
+%并将其写入'问题1葡萄酒评分表.xls'的第5个工作表中
+%*****************************************
+%第一组（红）各个样酒的总分
+clc,clear
+score = xlsread('问题1葡萄酒评分表.xls',1,'D2:M271');
+N=27;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',1,'N2:N271');
+SwineNum(isnan(SwineNum))=[];
+Sumscore = zeros(27,1);
+Sumscore0 = zeros(27,1);
+for i = 1:N
+    for j = 1:10
+       Sumscore(i) = Sumscore(i)+sum(score((i-1)*10+j,:));
+    end
+    Sumscore(i)=Sumscore(i)/10;
+end
+for i=1:N
+    Sumscore0(SwineNum(i))=Sumscore(i);
+end
+xlswrite('问题1葡萄酒评分表.xls',Sumscore0,5,'B2:B28');
+%第二组（红）各个样酒的总分
+clc,clear
+score = xlsread('问题1葡萄酒评分表.xls',2,'D2:M271');
+N=27;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',2,'N2:N271');
+SwineNum(isnan(SwineNum))=[];
+Sumscore = zeros(27,1);
+Sumscore0 = zeros(27,1);
+for i = 1:N
+    for j = 1:10
+       Sumscore(i) = Sumscore(i)+sum(score((i-1)*10+j,:));
+    end
+    Sumscore(i)=Sumscore(i)/10;
+end
+for i=1:N
+    Sumscore0(SwineNum(i))=Sumscore(i);
+end
+xlswrite('问题1葡萄酒评分表.xls',Sumscore0,5,'C2:C28');
+%第一组（白）各个样酒的总分
+clc,clear
+score = xlsread('问题1葡萄酒评分表.xls',3,'D2:M281');
+N=28;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',3,'N2:N281');
+SwineNum(isnan(SwineNum))=[];
+Sumscore = zeros(N,1);
+Sumscore0 = zeros(N,1);
+for i = 1:N
+    for j = 1:10
+       Sumscore(i) = Sumscore(i)+sum(score((i-1)*10+j,:));
+    end
+    Sumscore(i)=Sumscore(i)/10;
+end
+for i=1:N
+    Sumscore0(SwineNum(i))=Sumscore(i);
+end
+xlswrite('问题1葡萄酒评分表.xls',Sumscore0,5,'D2:D29');
+%第二组（白）各个样酒的总分
+clc,clear
+score = xlsread('问题1葡萄酒评分表.xls',4,'D2:M281');
+N=28;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',4,'N2:N281');
+SwineNum(isnan(SwineNum))=[];
+Sumscore = zeros(N,1);
+Sumscore0 = zeros(N,1);
+for i = 1:N
+    for j = 1:10
+       Sumscore(i) = Sumscore(i)+sum(score((i-1)*10+j,:));
+    end
+    Sumscore(i)=Sumscore(i)/10;
+end
+for i=1:N
+    Sumscore0(SwineNum(i))=Sumscore(i);
+end
+xlswrite('问题1葡萄酒评分表.xls',Sumscore0,5,'E2:E29');
+clc,clear
+%求两个组各个样酒的平均标准差
+%（分别用STD1、STD2、STD3、STD4表示）
+score = xlsread('问题1葡萄酒评分表.xls',1,'D2:M271');
+N=27;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',1,'N2:N271');
+SwineNum(isnan(SwineNum))=[];
+SumScore=zeros(N,10);
+for i = 1:N
+    for j = 1:10
+       for k = 1:10
+       SumScore(i,j) = SumScore(i,j)+score((i-1)*10+k,j);
+       end
+    end
+end
+SumScore=SumScore';
+STD1 = sum(std(SumScore))/N%显示平均标准差
+score = xlsread('问题1葡萄酒评分表.xls',2,'D2:M271');
+N=27;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',2,'N2:N271');
+SwineNum(isnan(SwineNum))=[];
+SumScore=zeros(N,10);
+for i = 1:N
+    for j = 1:10
+       for k = 1:10
+       SumScore(i,j) = SumScore(i,j)+score((i-1)*10+k,j);
+       end
+    end
+end
+SumScore=SumScore';
+STD2 = sum(std(SumScore))/N%显示平均标准差
+score = xlsread('问题1葡萄酒评分表.xls',3,'D2:M281');
+N=28;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',3,'N2:N281');
+SwineNum(isnan(SwineNum))=[];
+SumScore=zeros(N,10);
+for i = 1:N
+    for j = 1:10
+       for k = 1:10
+       SumScore(i,j) = SumScore(i,j)+score((i-1)*10+k,j);
+       end
+    end
+end
+SumScore=SumScore';
+STD3 = sum(std(SumScore))/N%显示平均标准差 
+score = xlsread('问题1葡萄酒评分表.xls',4,'D2:M281');
+N=28;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',4,'N2:N281');
+SwineNum(isnan(SwineNum))=[];
+SumScore=zeros(N,10);
+for i = 1:N
+    for j = 1:10
+       for k = 1:10
+       SumScore(i,j) = SumScore(i,j)+score((i-1)*10+k,j);
+       end
+    end
+end
+SumScore=SumScore';
+STD4 = sum(std(SumScore))/N%显示平均标准差
+
+程序2：
+Question2_1.m
+%*********************************************
+%问题2：求经过SPSS主层次分析后的新指标值
+%并将其写入'问题2红(白)葡萄数据.xls'的第5个工作表中
+%*********************************************
+clc,clear
+%红葡萄
+%读取经SPSS主成分分析后的相关数据
+component = xlsread('问题2红葡萄数据.xls',3,'B4:I33');%读入成分矩阵
+Eig = xlsread('问题2红葡萄数据.xls',2,'A1:A30');%读入相关系数矩阵特征值
+for i=1:8
+    component(:,i) = component(:,i)./sqrt(Eig);
+end
+xlswrite('问题2红葡萄数据.xls',component,4,'B4:I33');%主成分系数矩阵
+zhibiao = xlsread('问题2红葡萄数据.xls',1,'C2:AF28');
+for i=1:27
+    for j=1:8
+        f(i,j) =  component(:,j)'*zhibiao(i,:)';%主成分分析后的新指标值
+    end
+end
+xlswrite('问题2红葡萄数据.xls',f,5,'B3:I29');%保存新指标值
+clc,clear
+%白葡萄
+%读取经SPSS主成分分析后的相关数据
+component = xlsread('问题2白葡萄数据.xls',3,'B4:J33');%读入成分矩阵
+Eig = xlsread('问题2白葡萄数据.xls',2,'A1:A30');%读入相关系数矩阵特征值
+for i=1:9
+    component(:,i) = component(:,i)./sqrt(Eig);
+end
+xlswrite('问题2白葡萄数据.xls',component,4,'B4:J33');%主成分系数矩阵
+zhibiao = xlsread('问题2白葡萄数据.xls',1,'C2:AF29');
+for i=1:28
+    for j=1:9
+        f(i,j) =  component(:,j)'*zhibiao(i,:)';%主成分分析后的新指标值
+    end
+end
+xlswrite('问题2白葡萄数据.xls',f,5,'B3:J30');%保存新指标值
+
+ 程序3：
+Question2_2.m
+%*********************************
+%问题2：求经过SPSS聚类分析后的评价等级
+%*********************************
+%聚类分组后的评价等级计算
+clc,clear
+score1=xlsread('问题1葡萄酒评分表.xls',5,'C2:C28');
+%第二组评酒师对红葡萄酒的评分
+score2=xlsread('问题1葡萄酒评分表.xls',5,'E2:E29');
+%第二组评酒师对白葡萄酒的评分
+%红葡萄酒的聚类分组
+Zu11 = [10 25 20 19 13 12 23 8];
+Zu12 = [11 26 27];
+Zu13 = [9 1];
+Zu14 = [2 16 4 24 22 5 6 21 14 17 3 18 15 7];
+%白葡萄酒的聚类分组
+Zu21 = [11 23 5 28 4 17];
+Zu22 = [10 21 6 20 24 18 14 27 26 7];
+Zu23 = [3 15 2 13 9 12];
+Zu24 = [22 25 1 8];
+aver_score1(1) = mean(score1(Zu11));
+aver_score1(2) = mean(score1(Zu12));
+aver_score1(3) = mean(score1(Zu13));
+aver_score1(4) = mean(score1(Zu14));
+aver_score2(1) = mean(score2(Zu21));
+aver_score2(2) = mean(score2(Zu22));
+aver_score2(3) = mean(score2(Zu23));
+aver_score2(4) = mean(score2(Zu24));
+aver_score1%显示红葡萄酒每组的得分均值
+aver_score2%显示白葡萄酒每组的得分均值
+
+ 程序4：
+Question3.m
+%*******************************************
+%问题3：求葡萄酒与葡萄的理化指标间的多元线性回归系数
+%并做出相应的R-square、F值、p值检验
+%*******************************************
+clc,clear
+RedGrape = xlsread('问题3相关数据.xls',2,'B3:L29');
+RedWine =  xlsread('问题3相关数据.xls',5,'B3:H29');
+%对红葡萄的理化指标进行归一化
+for j = 1:11
+    for i=1:27
+        MAX = max(RedGrape(:,j));
+        MIN = min(RedGrape(:,j));
+        RedGrape(i,j) = (RedGrape(i,j) - MIN)/(MAX - MIN);
+    end
+end
+%对红葡萄酒的理化指标进行归一化
+for j = 1:7
+    for i=1:27
+        MAX = max(RedWine(:,j));
+        MIN = min(RedWine(:,j));
+        RedWine(i,j) = (RedWine(i,j) - MIN)/(MAX - MIN);
+    end
+end
+%求红葡萄的线性相关系数矩阵
+x = RedGrape;
+y = RedWine;
+x1=[ones(size(x,1),1) x];
+b1 = zeros(12,7);
+stats1=zeros(4,7);
+for i=1:7
+     [b,bint,r,rint,stats]=regress(y(:,i),x1);
+     b1(:,i)=b;
+     stats1(:,i)=stats';
+end
+b1%红葡萄的线性相关系数矩阵
+stats1%红葡萄的R-square、F值、p值检验
+WhiteGrape = xlsread('问题3相关数据.xls',4,'B3:O30');
+WhiteWine =  xlsread('问题3相关数据.xls',6,'B3:H30');
+%对白葡萄的理化指标进行归一化
+for j = 1:14
+    for i=1:28
+        MAX = max(WhiteGrape(:,j));
+        MIN = min(WhiteGrape(:,j));
+        WhiteGrape(i,j) = (WhiteGrape(i,j) - MIN)/(MAX - MIN);
+    end
+end
+%对白葡萄酒的理化指标进行归一化
+for j = 2:7
+    for i=1:28
+        MAX = max(WhiteWine(:,j));
+        MIN = min(WhiteWine(:,j));
+        WhiteWine(i,j) = (WhiteWine(i,j) - MIN)/(MAX - MIN);
+    end
+end
+%求白葡萄的线性相关系数
+x = WhiteGrape;
+y = WhiteWine;
+x1=[ones(size(x,1),1) x];
+b2 = zeros(15,7);
+stats2=zeros(4,7);
+for i=1:7
+     [b,bint,r,rint,stats]=regress(y(:,i),x1);
+     b2(:,i)=b;
+     stats2(:,i)=stats';
+end
+b2%白葡萄的线性相关系数矩阵
+stats2%白葡萄的R-square、F值、p值检验
+
+ 程序5：
+Question4_1.m
+%*******************************************
+%问题4：求解葡萄酒质量与葡萄酒指标之间的多元线性回归
+%并做出相应的R-square、F值、p值检验
+%*******************************************
+clc,clear
+RedWine =  xlsread('问题3相关数据.xls',5,'B3:H29');
+RedScore = [68.1 74 74.6 71.2 72.1 66.3 65.3 66 78.2 68.8 61.6 68.3 68.8 72.6 65.7 69.9 74.5 65.4 72.6 75.8 72.2 71.6 77.1 71.5 68.2 72 71.5]';%红酒第二组的葡萄酒质量(总评得分)
+%对红葡萄酒理化指标与葡萄酒质量(得分)归一化
+for j = 1:7
+    for i=1:27
+        MAX = max(RedWine(:,j));
+        MIN = min(RedWine(:,j));
+        RedWine(i,j) = (RedWine(i,j) - MIN)/(MAX - MIN);
+    end
+end
+RedScore = 
+(RedScore - min(RedScore))/(max(RedScore) - min(RedScore));
+%求红葡萄酒质量与红葡萄酒指标之间的多元回归系数
+x = RedWine;
+y = RedScore;
+x1=[ones(size(x,1),1) x];
+[b1,bint,r,rint,stats1] = regress(y,x1);
+b1%红葡萄酒质量与白葡萄酒指标之间的多元回归系数
+stats1%相应的R-square、F值、p值检验 
+WhiteWine =  xlsread('问题3相关数据.xls',6,'C3:H30');
+WhiteScore = [77.9 75.8 75.6 76.9 81.5 75.5 74.2 72.3 80.4 79.8 71.4 72.4 73.9 77.1 78.4 67.3 80.3 76.7 76.4 76.6 79.2 79.4 77.4 76.1 79.5 74.3 77 79.6 ]';%白酒第二组的葡萄酒质量(总评得分)
+%对白葡萄酒理化指标与葡萄酒质量(得分)归一化
+for j = 1:6
+    for i=1:28
+        MAX = max(WhiteWine(:,j));
+        MIN = min(WhiteWine(:,j));
+        WhiteWine(i,j) = (WhiteWine(i,j) - MIN)/(MAX - MIN);
+    end
+end
+WhiteScore = 
+(WhiteScore - min(WhiteScore))/(max(WhiteScore) - min(WhiteScore));
+%求白葡萄酒质量与白葡萄酒指标之间的多元回归系数
+x = WhiteWine;
+y = WhiteScore;
+x1=[ones(size(x,1),1) x];
+[b2,bint,r,rint,stats2] = regress(y,x1);
+b2  %显示白葡萄酒质量与白葡萄酒指标之间的多元回归系数
+stats2  %显示相应的R-square、F值、p值
+
+ 程序6：
+Question4_2.m
+%**********************************************
+%问题4：求第二组评酒师对各个样酒的每一指标的评分均值
+%并将其写入'问题1葡萄酒评分表.xls'的第6、7个工作表中
+%**********************************************
+%第二组（红酒）各个样酒的各个指标评分
+clc,clear
+score = xlsread('问题1葡萄酒评分表.xls',2,'O2:O271');
+N=27;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',2,'N2:N271');
+SwineNum(isnan(SwineNum))=[];
+Sumscore0 = zeros(27,10);
+for i=1:N
+    for j=1:10
+        Sumscore0(SwineNum(i),j)=score((i-1)*10+j);
+    end
+end
+xlswrite('问题1葡萄酒评分表.xls',Sumscore0,6,'B2:K28');
+%第二组（白酒）各个样酒的各个指标评分
+clc,clear
+score = xlsread('问题1葡萄酒评分表.xls',4,'O2:O281');
+N=28;
+SwineNum = xlsread('问题1葡萄酒评分表.xls',4,'N2:N281');
+SwineNum(isnan(SwineNum))=[];
+Sumscore0 = zeros(N,10);
+for i=1:N
+    for j=1:10
+        Sumscore0(SwineNum(i),j)=score((i-1)*10+j);
+    end
+end
+xlswrite('问题1葡萄酒评分表.xls',Sumscore0,7,'B2:K29');
+
+程序7：
+Question4典型相关分析.sps
+INCLUDE'C:\ProgramFiles(x86)\IBM\SPSS\Statistics\19\Samples\English\Canonical correlation.sps'.
+CANCORR SET1=x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30/
+            SET2=y1 y2 y3 y4 y5 y6 y7 y8 y9/.
+说明：
+进行典型相关分析时，针对分析的不同数据，需要修改对该程序的变量个数；
+程序中INCLUDE命令后的路径是SPSS软件中的语句Canonical correlation.sps的安装路径

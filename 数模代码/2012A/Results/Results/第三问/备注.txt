@@ -1,0 +1,48 @@
+红葡萄：
+x1	x2	x3	x4	x5	x6	x7	x8
+x1:花色苷mg/100g鲜重	
+x2:单宁(mmol/kg)	
+x3:总酚(mmol/kg)	
+x4:葡萄总黄酮（mmol/kg）	
+x5:白藜芦醇(mg/kg)	
+x6:DPPH自由基1/IC50（g/L）	
+x7:果皮颜色L	
+x8:苹果酸（g/L）
+
+白葡萄：
+x4	x12	x11	x13	x14	x10	x28	x2
+x4:花色苷mg/100g鲜重	
+x12:单宁(mmol/kg)	
+x11:总酚(mmol/kg)	
+x13:葡萄总黄酮（mmol/kg）	
+x14:白藜芦醇(mg/kg)	
+x10:DPPH自由基1/IC50（g/L）	
+x28:果皮颜色	
+x2:蛋白质mg/100g
+
+红酒：
+y1	y2	y3	y4	y5	y6	y7            y8          y9
+y1:花色苷(mg/L)	
+y2:单宁(mmol/L)	
+y3:总酚(mmol/L)	
+y4:酒总黄酮(mmol/L)	
+y5:白藜芦醇(mg/L)	
+y6:DPPH半抑制体积（IV50） 1/IV50(uL)	
+y7:色泽L
+y8:色泽a
+y9:色泽b
+
+白酒：
+y1	y2	y3	y4	y5	y6	y7            y8          y9
+y1:花色苷(mg/L)	
+y2:单宁(mmol/L)	
+y3:总酚(mmol/L)	
+y4:酒总黄酮(mmol/L)	
+y5:白藜芦醇(mg/L)	
+y6:DPPH半抑制体积（IV50） 1/IV50(uL)	
+y7:色泽L
+y8:色泽a
+y9:色泽b
+
+
+

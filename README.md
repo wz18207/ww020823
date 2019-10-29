@@ -1,2 +1,2 @@
 # ww020823
-这个文件夹仅限于win10平台下的开发。本人很懒，所以只建立一个Repository供大家参考使用。所有代码都拥有独立的分类。
+Including Every of my learning notes & inputting codes & project I have tried.

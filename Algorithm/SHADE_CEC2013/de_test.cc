@@ -1,14 +1,4 @@
-/*
-  SHADE implemented by C++ for Special Session & Competition on Real-Parameter Single Objective Optimization at CEC-2013
-  See the details of SHADE in the following papers
-
-  1. Ryoji Tanabe and Alex Fukunaga: Success-History Based Parameter Adaptation for Differential Evolution, Proc. IEEE Congress on Evolutionary Computation (CEC-2013), Cancun, June, 2013, pp. 71-78.
-  2. Ryoji Tanabe and Alex Fukunaga: Evaluating the performance of SHADE on CEC 2013 benchmark problems, Proc. IEEE Congress on Evolutionary Computation (CEC-2013), Cancun, June, 2013, pp. 1952-1959.
-  
-  Version: 1.0   Date: 28/June/2013
-  Written by Ryoji Tanabe (rt.ryoji.tanabe@gmail.com)
-*/
-
+//ww020823
 #include "de.h"
 
 double *OShift,*M,*y,*z,*x_bound;

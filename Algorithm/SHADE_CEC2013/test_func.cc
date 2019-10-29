@@ -1,9 +1,4 @@
-/*
-  CEC13 Test Function Suite 
-  Jane Jing Liang (email: liangjing@zzu.edu.cn) 
-  Last Modified on 27th Jan. 2013
-*/
-
+//ww020823
 // #include <WINDOWS.H>      
 #include <stdio.h>
 #include <math.h>

@@ -139,7 +139,6 @@ Individual searchAlgorithm::makeNewIndividual() {
 
 /*
   For each dimension j, if the mutant vector element v_j is outside the boundaries [x_min , x_max], we applied this bound handling method
-  If you'd like to know that precisely, please read:
   J. Zhang and A. C. Sanderson, "JADE: Adaptive differential evolution with optional external archive,"
   IEEE Tran. Evol. Comput., vol. 13, no. 5, pp. 945–958, 2009.
  */

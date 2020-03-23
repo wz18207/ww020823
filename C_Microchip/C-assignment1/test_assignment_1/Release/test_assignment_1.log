@@ -1,0 +1,12 @@
+﻿  assignment.c
+E:\大学资料\C+Arduino\exercise\C-assignment1\assignment1\assignment1.h(9,22): warning C4305: “初始化”: 从“int”到“char”截断
+E:\大学资料\C+Arduino\exercise\C-assignment1\assignment1\assignment.c(18,1): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 参见“scanf”的声明
+E:\大学资料\C+Arduino\exercise\C-assignment1\assignment1\assignment.c(19,1): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 参见“fopen”的声明
+E:\大学资料\C+Arduino\exercise\C-assignment1\assignment1\assignment.c(20,1): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(208): message : 参见“fopen”的声明
+E:\大学资料\C+Arduino\exercise\C-assignment1\assignment1\assignment.c(28,1): error C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(440): message : 参见“strtok”的声明
+E:\大学资料\C+Arduino\exercise\C-assignment1\assignment1\assignment.c(102,1): error C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(440): message : 参见“strtok”的声明

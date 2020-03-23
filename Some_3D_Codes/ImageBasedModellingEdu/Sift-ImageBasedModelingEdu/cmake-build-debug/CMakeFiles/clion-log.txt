@@ -1,0 +1,26 @@
+"E:\Clion\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\4  3D rebuild project\3D rebuild code\ImageBasedModellingEdu\ImageBasedModellingEdu"
+-- The C compiler identification is GNU 8.2.0
+-- The CXX compiler identification is GNU 8.2.0
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe
+-- Check for working CXX compiler: C:/MinGW/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Could NOT find ZLIB (missing: ZLIB_INCLUDE_DIR) 
+CMake Error at E:/Clion/CLion 2018.3.4/bin/cmake/win/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake:137 (message):
+  Could NOT find PNG (missing: PNG_LIBRARY PNG_PNG_INCLUDE_DIR)
+Call Stack (most recent call first):
+  E:/Clion/CLion 2018.3.4/bin/cmake/win/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake:378 (_FPHSA_FAILURE_MESSAGE)
+  E:/Clion/CLion 2018.3.4/bin/cmake/win/share/cmake-3.13/Modules/FindPNG.cmake:142 (find_package_handle_standard_args)
+  core/CMakeLists.txt:7 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/4  3D rebuild project/3D rebuild code/ImageBasedModellingEdu/ImageBasedModellingEdu/cmake-build-debug/CMakeFiles/CMakeOutput.log".
